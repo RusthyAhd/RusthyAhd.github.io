@@ -13,6 +13,13 @@ const projects = [
     github: '',
     demo: '',
   },
+  {
+    title: 'Pegas Rental Hub',
+    description: 'A multi category rental hub application for managing rental listings and bookings.',
+    techStack: ['Flutter', 'Firebase'],
+    github: '',
+    demo: '',
+  },
   // Add more projects as you want
 ];
 
