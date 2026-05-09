@@ -3,12 +3,12 @@ import React from 'react';
 
 function ProjectCard({ project }) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden h-full">
+    <div className="group bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden h-full">
       {project.thumbnail && (
         <img
           src={project.thumbnail}
           alt={`${project.title} screenshot`}
-          className="w-full h-40 object-cover"
+          className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-105"
         />
       )}
       <div className="p-6">

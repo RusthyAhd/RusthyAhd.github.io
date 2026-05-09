@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const socials = [
   {
@@ -8,10 +8,6 @@ const socials = [
   {
     icon: <FaLinkedin />,
     url: 'https://www.linkedin.com/in/rusthyahd2001',
-  },
-  {
-    icon: <FaTwitter />,
-    url: 'https://twitter.com/rusthyahd2001',
   },
 ];
 

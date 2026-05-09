@@ -7,6 +7,9 @@ import Footer from './components/Footer';
 import ScrollToTopButton from './components/ScrollToTopButton'; // ✅ NEW
 import Experience from './sections/Experience';
 import CustomCursor from './components/CustomCursor';
+import Skills from './sections/Skills';
+import Education from './sections/Education';
+import Certificates from './sections/Certificates';
 
 function App() {
   return (
@@ -16,7 +19,7 @@ function App() {
       <Header />
 
       {/* Main Content */}
-      <main className="flex-1 p-8 md:p-16 ml-48">
+      <main className="flex-1 p-8 md:p-16 pt-24 md:pt-16 md:ml-48">
         <section id="hero" className="mb-24">
           <Hero />
         </section>
@@ -26,8 +29,17 @@ function App() {
         <section id="experience" className="mb-24">
     <Experience />
   </section>
+        <section id="skills" className="mb-24">
+          <Skills />
+        </section>
         <section id="projects" className="mb-24">
           <Projects />
+        </section>
+        <section id="education" className="mb-24">
+          <Education />
+        </section>
+        <section id="certificates" className="mb-24">
+          <Certificates />
         </section>
         <section id="contact" className="mb-24">
           <Contact />

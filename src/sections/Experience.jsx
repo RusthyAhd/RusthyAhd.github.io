@@ -1,14 +1,16 @@
+import { motion } from 'framer-motion';
+
 const experiences = [
   {
-    role: 'Software Engineer Intern',
-    company: 'Orbit pvt Ltd',
-    duration: 'January 2025 – June 2025',
+    role: 'Intern Software Engineer',
+    company: 'Orbit (Pvt) Ltd',
+    duration: '2025',
     details: [
-       'Built user-friendly mobile apps using Flutter framework.',
-      'Worked closely with designers to implement UI/UX best practices.',
-      'Implemented state management and integrated REST APIs.',
+      'Collaborated with the development team to design and build web and mobile applications.',
+      'Contributed to front-end and back-end features using Flutter, Dart, and Firebase.',
+      'Assisted with API integration and performance optimization.',
     ],
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Git'],
+    technologies: ['Flutter', 'Dart', 'Firebase', 'Node.js', 'MongoDB'],
   },
  
 ];
@@ -19,7 +21,15 @@ const Experience = () => {
       <h2 className="text-3xl font-bold mb-8">Experience</h2>
       <div className="space-y-8">
         {experiences.map(({ role, company, duration, details, technologies }, index) => (
-          <div key={index} className="border-l-4 border-blue-500 pl-6">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.05 }}
+            viewport={{ once: true }}
+            whileHover={{ y: -6 }}
+            className="border-l-4 border-blue-500 pl-6 transition-transform"
+          >
             <h3 className="text-xl font-semibold">{role}</h3>
             <p className="italic text-sm text-gray-600 dark:text-gray-400">{company} | {duration}</p>
             <ul className="list-disc list-inside mt-2 space-y-1">
@@ -40,7 +50,7 @@ const Experience = () => {
 
               ))}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       <div className="h-px bg-gray-300 dark:bg-gray-700 my-16" />
